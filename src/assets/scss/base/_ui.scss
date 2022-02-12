@@ -1,0 +1,86 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background: #fff;
+    -webkit-text-size-adjust: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+
+    @include breakpoint(lg) {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+background: rgba(90, 90, 90, 0.2);
+}
+
+::-webkit-scrollbar-track {
+background: rgba(0, 0, 0, 0.2);
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 29px;
+    border-radius: 0;
+    border: 1px solid #e6e6e6;
+    padding: 0;
+    background: #fbfbf7;
+    font-family: open sans,sans-serif;
+    margin: 0;
+    font-size: 12px;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#page {
+    position: relative;
+    background-color: #2f3c49;
+    min-width: 320px;
+    min-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1600px;
+
+    @include breakpoint(sm) {
+        padding: 0 15px;
+    }
+}
+
+.button-style {
+    padding: 25px;
+    background: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.button-style:hover {
+    opacity: .8;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+}
