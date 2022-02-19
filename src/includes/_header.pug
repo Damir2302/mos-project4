@@ -1,4 +1,4 @@
-block footer
+block header
 
     header#header.header
 
@@ -7,21 +7,22 @@ block footer
             .header__inner
 
                 .header__logo
-                    img(src="assets/images/Logo_white.svg", alt="logo")
+                    img.img-logo-white(src="assets/images/Logo_white.svg", alt="logo")
+                    img.img-logo-black(src="assets/images/Logo_MP4.svg", alt="logo")
 
                 .header__nav
                     ul.nav__menu
-                        li.nav__item
+                        li.nav__item(class= about_page ? 'current-page' : false)
                             a.nav__link(href="#") О нас
-                        li.nav__item
+                        li.nav__item(class= projects_page ? 'current-page' : false)
                             a.nav__link(href="#") Проекты
-                        li.nav__item
+                        li.nav__item(class= specialty_page ? 'current-page' : false)
                             a.nav__link(href="#") Направления деятельности
-                        li.nav__item
+                        li.nav__item(class= news_page ? 'current-page' : false)
                             a.nav__link(href="#") Новости
-                        li.nav__item
+                        li.nav__item(class= license_page ? 'current-page' : false)
                             a.nav__link(href="#") Лицензии
-                        li.nav__item
+                        li.nav__item(class= contacts_page ? 'current-page' : false)
                             a.nav__link(href="#") Контакты
 
                 .header__phone

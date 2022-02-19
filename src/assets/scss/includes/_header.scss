@@ -1,5 +1,13 @@
 .header {
     padding: 20px 0 25px;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.2);
+
+    @include breakpoint(lg) {
+        padding: 34px 0;
+    }
+}
+
+.index-page .header {
 
     @include breakpoint(lg) {
         padding: 26px 0;
@@ -21,14 +29,31 @@
 
     @include breakpoint(lg) {
         flex: 1 1 50%;
+        max-width: 220px;
         z-index: 2;
     }
+
+    @include breakpoint(hd) {
+        max-width: 345px;
+    }
+}
+
+.img-logo-white {
+    display: none;
+}
+
+.index-page .img-logo-white {
+    display: block;
+}
+
+.index-page .img-logo-black {
+    display: none;
 }
 
 .header__nav {
     background: #fff;
     position: absolute;
-    top: 75px;
+    top: 50px;
     left: 0;
     display: none;
     width: 100%;
@@ -60,6 +85,7 @@
 
     @include breakpoint(lg) {
         margin: 0 10px;
+        position: relative;
     }
 
     @include breakpoint(hd) {
@@ -67,12 +93,21 @@
     }
 }
 
+.nav__item.current-page::after {
+    content: '';
+    background: #2f3c49;
+    position: absolute;
+    bottom: -34px;
+    width: 100%;
+    height: 3px;
+}
+
 .nav__link {
 
     @include breakpoint(lg) {
         font-weight: 600;
         line-height: 21px;
-        color: #fff;
+        color: #2f3c49;
         text-transform: uppercase;
     }
 
@@ -81,12 +116,23 @@
     }
 }
 
+.index-page .nav__link {
+
+    @include breakpoint(lg) {
+        color: #fff;
+    }
+}
+
+.index-page .nav__link:hover {
+    color: #c1c1c1;
+}
+
 .header__phone a {
     margin-top: 24px;
     font-weight: 300;
     font-size: 24px;
     line-height: 21px;
-    color: #fff;
+    color: #2f3c49;
 
     @include breakpoint(lg) {
         margin: 0;
@@ -97,10 +143,14 @@
     }
 }
 
+.index-page .header__phone a {
+    color: #fff;
+}
+
 .header__btn-mobile {
     background: transparent;
     position: absolute;
-    top: 20px;
+    top: 5px;
     right: 15px;
 
     @include breakpoint(lg) {
@@ -109,7 +159,7 @@
 }
 
 .header__btn-mobile span {
-    background: #fff;
+    background: #000;
     position: relative;
     display: inline-block;
     height: 2px;
@@ -117,9 +167,13 @@
     transition: all 0.3s ease;
 }
 
+.index-page .header__btn-mobile span {
+    background: #fff;
+}
+
 .header__btn-mobile span::before {
     content: "";
-    background: #fff;
+    background: #000;
     position: absolute;
     left: 0;
     top: -7px;
@@ -129,9 +183,13 @@
     transition: all 0.3s ease;
 }
 
+.index-page .header__btn-mobile span::before {
+    background: #fff;
+}
+
 .header__btn-mobile span::after {
     content: "";
-    background: #fff;
+    background: #000;
     position: absolute;
     left: 0;
     bottom: -7px;
@@ -139,6 +197,10 @@
     height: 2px;
     width: 22px;
     transition: all 0.3s ease;
+}
+
+.index-page .header__btn-mobile span::after {
+    background: #fff;
 }
 
 .header__btn-mobile.opened span {

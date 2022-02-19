@@ -29,8 +29,8 @@ $(document).ready(function() {
     });
 
     function changeNumber() {
-        let currentNumber = $('.hero-slider .current-slide-number');
-        let lastNumber = $('.hero-slider .last-slide-number');
+        let currentNumber = $('.hero__slider .current-slide-number');
+        let lastNumber = $('.hero__slider .last-slide-number');
 
         currentNumber.html(hero_slider.realIndex +  1);
         lastNumber.html(hero_slider.slides.length);
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     changeNumber();
 
-    $('.hero-slider .swiper-button-prev, .hero-slider .swiper-button-next').on('click', changeNumber);
+    $('.hero__slider .swiper-button-prev, .hero__slider .swiper-button-next').on('click', changeNumber);
   }
 
 
@@ -48,8 +48,17 @@ $(document).ready(function() {
       direction: 'horizontal',
       freeMode: true,
       slidesPerView: 2.1,
-      spaceBetween: 10
-    })
+      spaceBetween: 10,
+      breakpoints: {
+        1024: {
+           slidesPerView: 3
+        },
+      }
+    });
+
+    if ($(window).width() > 1259) {
+      news_block.destroy();
+    }
   }
 
 });

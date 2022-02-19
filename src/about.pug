@@ -1,0 +1,356 @@
+---
+title: МОСПРОЕКТ 4 | О нас
+about_page: true
+---
+
+extends includes/_page
+
+block main
+
+    .breadcrumbs
+
+        .container
+
+            .breadcrumbs__inner
+
+                a.breadcrumbs-item(href="/") Главная
+                span.breadcrumbs-separator —
+                span.breadcrumbs-item(href="/") О Компании
+
+    section
+
+        .container
+
+            h2.section-title.page-title О нас
+
+    section.about-section
+
+        .about__inner
+
+            .about__first-block
+
+                h2.section-title.about__title МОСПРОЕКТ4
+                p.about__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+
+                .about__stats
+
+                    .about__stats-wrap
+                        span.stats-count 5 млн.
+                        span.stats-text квадратных метров
+
+                    .about__stats-wrap
+                        span.stats-count 40
+                        span.stats-text професиональных<br>проектировщиков
+
+                    .about__stats-wrap
+                        span.stats-count 15+
+                        span.stats-text жилых комплексов
+
+                a.about__link(href="#") Подробнее о компании
+
+            .about__second-block
+                img(src="assets/images/about_bg.jpg", alt="img")
+
+    section.management-section
+
+        h2.section-title.management__title Руководство компании
+
+        .management__inner
+
+            .management__block
+                img.management-image(src="assets/images/Grekov.jpg", alt="img")
+                span.management-status Управляющий директор
+                span.management-name Греков Вадим Юрьевич
+
+            .management__block
+                img.management-image(src="assets/images/Makarova.jpg", alt="img")
+                span.management-status Управляющий директор по производству
+                span.management-name Макарова Ольга Владимировна
+
+            .management__block
+                img.management-image(src="assets/images/Zaziyanc.jpg", alt="img")
+                span.management-status Главный инженер
+                span.management-name Зазиянц Вячеслав Аркадьевич
+
+    section.awards-section
+
+        .container
+
+            .awards__header
+
+                h2.section-title.awards__title Награды
+                .awards__documents
+                    .file-pdf
+                        i.fal.fa-file-pdf
+                        a(href="#") Перечень наград 2001-2021
+
+                    .file-pdf
+                        i.fal.fa-file-pdf
+                        a(href="#") Перечень наград 1975-2000
+
+            .swiper.awards__slider
+
+                .swiper-wrapper
+
+                    .swiper-slide
+                        .awards-desc
+                            .awards-image
+                                img(src="assets/images/2017_04_20_Zol-Sech_CSKA-2017-nominant.jpg", alt="img")
+                            .awards-info
+                                p.awards-info-title Лауреат премии - Стадион Арена ЦСКА в номинации "Реализаци. Здание и сооружение".
+                                p.awards-info-text Благодарность Архсовета Москвы за высокое качество проектных работ и профессионализм, которые способствуют повышению качества арх. решений соц. объектов и городской среды Москвы - за реализацию проекта Жилой дом в районе Очаково-Матвееское, Аминьевское шоссе.
+                        .awards-title Золотое сечение - 2017
+
+                    .swiper-slide
+                        .awards-desc
+                            .awards-image
+                                img(src="assets/images/Diplom_K_Arch_2014_zoo_Oranghereya.jpg", alt="img")
+                            .awards-info
+                                p.awards-info-title Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                p.awards-info-text Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        .awards-title Качественная архитектура - 2014
+
+                    .swiper-slide
+                        .awards-desc
+                            .awards-image
+                                img(src="assets/images/GTG_Zodchestvo MP4_2014.jpg", alt="img")
+                            .awards-info
+                                p.awards-info-title Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                p.awards-info-text Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        .awards-title Золотое сечение - 2017
+
+                    .swiper-slide
+                        .awards-desc
+                            .awards-image
+                                img(src="assets/images/2017_04_20_Zol-Sech_CSKA-2017-nominant.jpg", alt="img")
+                            .awards-info
+                                p.awards-info-title Лауреат премии - Стадион Арена ЦСКА в номинации "Реализаци. Здание и сооружение".
+                                p.awards-info-text Благодарность Архсовета Москвы за высокое качество проектных работ и профессионализм, которые способствуют повышению качества арх. решений соц. объектов и городской среды Москвы - за реализацию проекта Жилой дом в районе Очаково-Матвееское, Аминьевское шоссе.
+                        .awards-title Золотое сечение - 2017
+
+                    .swiper-slide
+                        .awards-desc
+                            .awards-image
+                                img(src="assets/images/Diplom_K_Arch_2014_zoo_Oranghereya.jpg", alt="img")
+                            .awards-info
+                                p.awards-info-title Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                p.awards-info-text Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        .awards-title Качественная архитектура - 2014
+
+                .slide-navigation
+
+                    .swiper-awards-nav
+                        button.button-navigation.button-prev
+                            i.fal.fa-arrow-left
+                            span Пред. награды
+
+                        .slider-pagination
+                            .swiper-fraction
+                                span.current-slide-number
+                                span(style="margin: 0 5px;") /
+                                span.last-slide-number
+                            .swiper-pagination
+
+                        button.button-navigation.button-next
+                            i.fal.fa-arrow-right
+                            span След. награды
+
+    section.archive-section
+
+        .container
+
+            h2.section-title.archive__title Архив объектов 1990 до 2014 г.
+
+            .archive__inner
+
+                .archive__slider
+
+                    .swiper.swiper-item.swiper-item--first
+
+                        .image__container.swiper-wrapper
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+
+                    .swiper.swiper-item-pagination.swiper-item-pagination--first
+
+                        .image__container.swiper-wrapper
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/01-2006_b-BOTKINA_MED.jpg", alt="img")
+
+                .archive__desc
+
+                    p.archive__article-title ЛЕЧЕБНО-КЛИНИЧЕСКИЙ КОМПЛЕКС. ГКБ ИМ. С.П. БОТКИНА.
+                    p.archive__article-info Москва, 2-ой Боткинский пр., вл. 5.<br>Архитекторы: Крышталь М., Леонова М., Легошин В. (на стадии «проект»). При участии Ткаченко Л., Шунина Е., Крылова Л., Новикова Н., Ловцова О.<br>Инженеры: Елецкий Г., Родиченко П., Кушнер Ю., Борецкая Ю., Панюшкина Н., Болотова Л.<br>(реализация 2006).
+                    p.archive__article-text Смотр-конкурс СМА «Золотое сечение-2007». Лауреат. Международный фестиваль «Зодчество-2007». Бронзовый диплом.Конкурс «Лучший реализованный проект 2006 г. в области инвестиций и строительства». Абсолютный победитель.
+
+        .download-file-link
+
+            .container
+
+                .download-link-wrap
+                    i.fal.fa-file-pdf
+                    a(href="#") Наша история
+
+        .container
+
+            h2.section-title.archive__title.archive__title--second Архив объектов до 1990 г.
+
+            .archive__inner.archive__inner--second
+
+                .archive__slider
+
+                    .swiper.swiper-item.swiper-item--second
+
+                        .image__container.swiper-wrapper
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+
+                    .swiper.swiper-item-pagination.swiper-item-pagination--second
+
+                        .image__container.swiper-wrapper
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                            .image__block.swiper-slide
+                                a
+                                    img(src="assets/images/img34dwq.jpg", alt="img")
+
+                .archive__desc
+
+                    p.archive__article-title ЛЕЧЕБНО-КЛИНИЧЕСКИЙ КОМПЛЕКС. ГКБ ИМ. С.П. БОТКИНА.
+                    p.archive__article-info Москва, 2-ой Боткинский пр., вл. 5.<br>Архитекторы: Крышталь М., Леонова М., Легошин В. (на стадии «проект»). При участии Ткаченко Л., Шунина Е., Крылова Л., Новикова Н., Ловцова О.<br>Инженеры: Елецкий Г., Родиченко П., Кушнер Ю., Борецкая Ю., Панюшкина Н., Болотова Л.<br>(реализация 2006).
+                    p.archive__article-text Смотр-конкурс СМА «Золотое сечение-2007». Лауреат. Международный фестиваль «Зодчество-2007». Бронзовый диплом.Конкурс «Лучший реализованный проект 2006 г. в области инвестиций и строительства». Абсолютный победитель.

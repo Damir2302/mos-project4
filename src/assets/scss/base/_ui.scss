@@ -49,20 +49,29 @@ select {
 
 #page {
     position: relative;
-    background-color: #2f3c49;
+    background-color: #ffffff;
     min-width: 320px;
     min-height: 100%;
     max-width: 100%;
     overflow: hidden;
 }
 
+.index-page #page {
+    background-color: #2f3c49;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 10px;
+    position: relative;
     max-width: 1600px;
 
     @include breakpoint(sm) {
         padding: 0 15px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 0 30px;
     }
 }
 
@@ -83,4 +92,16 @@ select {
     font-weight: 700;
     font-size: 30px;
     line-height: 42px;
+
+    @include breakpoint(lg) {
+        font-size: 36px;
+    }
+}
+
+.page-title {
+    margin-bottom: 15px;
+
+    @include breakpoint(lg) {
+        margin-bottom: 30px;
+    }
 }

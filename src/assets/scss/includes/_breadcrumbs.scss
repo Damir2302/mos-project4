@@ -1,0 +1,21 @@
+.breadcrumbs {
+    padding: 20px 0;
+}
+
+.breadcrumbs__inner {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs-item,
+.breadcrumbs-separator {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 32px;
+    color: #aeb1b8;
+    text-transform: uppercase;
+}
+
+.breadcrumbs-separator {
+    margin: 0 5px;
+}

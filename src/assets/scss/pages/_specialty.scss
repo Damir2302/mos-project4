@@ -1,0 +1,41 @@
+.specialty__inner {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 1060px;
+}
+
+.specialty__block {
+    padding: 20px;
+    background-size: 100% 100%;
+    background-position: center center;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 302px;
+    max-width: 520px;
+    transition: all 0.4s ease;
+}
+
+.specialty__block:hover {
+    background-size: 110% 110%;
+}
+
+.specialty__block {
+    flex: 0 0 32%;
+}
+
+.specialty__block:nth-child(1),
+.specialty__block:nth-child(2) {
+    flex: 0 0 50%;
+}
+
+.specialty-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+}

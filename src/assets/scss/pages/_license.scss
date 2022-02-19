@@ -1,0 +1,93 @@
+.license__inner {
+    padding: 45px 0 90px;
+    background: #eeeeee;
+
+    @include breakpoint(lg) {
+        padding: 65px 0 90px;
+    }
+}
+
+.license__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include breakpoint(lg) {
+        flex-direction: row;
+    }
+}
+
+.license__aside {
+    width: 100%;
+    max-width: 100%;
+
+    @include breakpoint(lg) {
+        max-width: 285px;
+    }
+}
+
+.license__aside p {
+    margin-bottom: 25px;
+    color: #222222;
+}
+
+.license__title {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 42px;
+    text-transform: uppercase;
+
+    @include breakpoint(lg) {
+        margin-bottom: 45px;
+    }
+}
+
+.license__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    width: 100%;
+    max-width: 100%;
+
+    @include breakpoint(lg) {
+        justify-content: flex-end;
+        max-width: 840px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 1060px;
+        margin-left: 40px;
+    }
+}
+
+.license__item {
+    margin: 0 0 75px;
+    flex: 0 0 46%;
+
+    @include breakpoint(xs) {
+        flex: 0 0 30%;
+    }
+
+    @include breakpoint(lg) {
+        flex: 0 0 25%;
+    }
+
+    @include breakpoint(hd) {
+        flex: 0 0 23%;
+    }
+}
+
+.license__item img {
+    width: 100%;
+}
+
+.license__item p {
+    margin: 30px 0;
+}
+
+.zoom-btn {
+    font-weight: 700;
+    text-transform: uppercase;
+}
