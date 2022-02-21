@@ -1,0 +1,328 @@
+.project__nav {
+    display: flex;
+    height: 56px;
+    border-top: 1px solid #f9f9f9;
+}
+
+.project__nav-item {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    line-height: 56px;
+}
+
+.project__nav-item.active {
+    background: #f9f9f9;
+}
+
+.project__nav-link {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.project__nav-item.active .project__nav-link {
+    font-weight: 400;
+}
+
+.project__block {
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include breakpoint(lg) {
+        flex-direction: row;
+    }
+}
+
+.project__block:nth-child(odd) {
+
+    @include breakpoint(lg) {
+        flex-direction: row-reverse;
+    }
+}
+
+.project-article {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(lg) {
+        padding: 0;
+        justify-content: center;
+        width: 40%;
+    }
+
+    @include breakpoint(xl) {
+        width: 50%;
+    }
+}
+
+.project-article__wrapper {
+    width: 100%;
+
+    @include breakpoint(lg) {
+        max-width: 365px;
+    }
+}
+
+.project__title {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.project__address {
+    margin: 20px 0;
+    padding-left: 21px;
+    position: relative;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 21px;
+    text-decoration: underline;
+
+    @include breakpoint(lg) {
+        margin: 50px 0;
+    }
+}
+
+.project__address::before {
+    content: "\f041";
+    position: absolute;
+    left: 0;
+    font-family: $icon;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.project__link {
+    margin: 30px 0 0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 42px;
+    text-transform: uppercase;
+
+    @include breakpoint(lg) {
+        margin: 50px 0 0;
+    }
+}
+
+.project-image {
+
+    @include breakpoint(lg) {
+        width: 60%;
+    }
+
+    @include breakpoint(xl) {
+        width: 50%;
+    }
+}
+
+.project-image__wrap {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 220px;
+
+    @include breakpoint(xs) {
+        height: 330px;
+    }
+
+    @include breakpoint(sm) {
+        height: 420px;
+    }
+
+    @include breakpoint(md) {
+        height: 667px;
+    }
+}
+
+.project__slider .slide-navigation {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    z-index: 1;
+}
+
+.swiper-project-nav {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(xl) {
+        padding: 0 50px;
+    }
+}
+
+.swiper-project-nav .button-navigation {
+    font-weight: 700;
+    color: #fff;
+}
+
+.swiper-project-nav .swiper-fraction span {
+    color: #fff;
+}
+
+.swiper-project-nav .swiper-fraction .current-slide-number {
+    font-size: 30px;
+    line-height: 27px;
+}
+
+.swiper-project-nav .swiper-fraction .last-slide-number {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.swiper-project-nav .slider-pagination {
+    width: 100%;
+
+    @include breakpoint(lg) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+}
+
+.swiper-project-nav .slider-pagination .swiper-pagination {
+    position: initial;
+
+    @include breakpoint(lg) {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+.swiper-project-nav .swiper-pagination-bullet {
+    margin: 0 20px!important;
+    background: #fff;
+    opacity: 0.5;
+}
+
+.swiper-project-nav .swiper-pagination-bullet-active {
+    background: #fff;
+    position: relative;
+    opacity: 1;
+}
+
+.swiper-project-nav .swiper-pagination-bullet-active::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    opacity: 1;
+}
+
+.project-pagination {
+    padding: 55px 0;
+}
+
+.project__pagination {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+
+    @include breakpoint(lg) {
+        flex-direction: row;
+    }
+}
+
+.pagination-wrap {
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+
+    @include breakpoint(lg) {
+        margin: 0;
+        padding: 25px 73px;
+        width: unset;
+        max-width: unset;
+    }
+}
+
+.pagination-arrow {
+    position: absolute;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.pagination-arrow.arrow-left {
+    left: 20px;
+}
+
+.pagination-arrow.arrow-right {
+    top: 21px;
+    right: 20px;
+
+    @include breakpoint(lg) {
+        top: 25px;
+    }
+}
+
+.pagination-items {
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint(lg) {
+        justify-content: unset;
+    }
+}
+
+.pagination-items a {
+    padding: 0 15px;
+    position: relative;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.pagination-items a.active::after {
+    content: '';
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -21px;
+    width: 100%;
+    height: 2px;
+
+    @include breakpoint(lg) {
+        bottom: -28px;
+    }
+}
+
+.pagination-show-more {
+    margin: 0 auto 30px;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+
+    @include breakpoint(lg) {
+        margin: 0;
+        padding: 30px 75px;
+    }
+}
+
+.pagination-show-more a::after {
+    content: "\f178";
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-family: $icon;
+    font-weight: 300;
+    font-size: 24px;
+}

@@ -1,0 +1,153 @@
+.p__inner-title {
+    text-align: center;
+}
+
+.p__wrapper {
+    background: #f1f1f1;
+}
+
+.p__inner-image {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1060px;
+}
+
+.p__info {
+    margin: 0 auto;
+    padding: 90px 20px 45px;
+    width: 100%;
+    max-width: 790px;
+
+    @include breakpoint(lg) {
+        padding: 90px 0 45px;
+    }
+}
+
+.p__info-title {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.p__address {
+    margin: 30px 0 0;
+    padding-left: 21px;
+    position: relative;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 21px;
+    text-decoration: underline;
+}
+
+.p__address::before {
+    content: "\f041";
+    position: absolute;
+    left: 0;
+    font-family: $icon;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.p__info-text {
+    margin: 80px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include breakpoint(md) {
+        flex-direction: row;
+    }
+}
+
+.p__features {
+    margin: 0 0 60px;
+    display: block;
+}
+
+.p__features-bold {
+    margin: 0 0 5px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.features-small {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.p__col-right {
+    width: 100%;
+    max-width: 520px;
+}
+
+.p__col-right p {
+    margin: 0 0 45px;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.p__images {
+    padding: 0 0 50px;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+        padding: 0;
+        flex-direction: row;
+    }
+}
+
+.p__image-item {
+    margin: 0 auto 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    max-width: 400px;
+
+    @include breakpoint(md) {
+        margin: 0;
+        width: 25%;
+        height: 160px;
+        max-width: unset;
+    }
+
+    @include breakpoint(xl) {
+        height: 300px;
+    }
+}
+
+.p__bottom {
+    padding: 60px 0 70px;
+    background: #f1f1f1;
+}
+
+.p__return-link {
+    margin: 0 auto;
+    padding: 15px 50px 15px 30px;
+    background: #fff;
+    position: relative;
+    display: block;
+    max-width: 300px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        margin: 0;
+        padding: 30px 80px 30px 70px;
+        display: inline-block;
+        max-width: unset;
+    }
+}
+
+.p__return-link::after {
+    content: "\f01e";
+    position: absolute;
+    right: 20px;
+    font-family: $icon;
+    font-weight: 400;
+    font-size: 18px;
+}

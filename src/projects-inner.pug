@@ -1,0 +1,109 @@
+---
+title: МОСПРОЕКТ 4 | Название проекта
+projects_page: true
+---
+
+extends includes/_page
+
+block main
+
+    .breadcrumbs
+
+        .container
+
+            .breadcrumbs__inner
+
+                a.breadcrumbs-item(href="/") Главная
+                span.breadcrumbs-separator —
+                a.breadcrumbs-item(href="/") Проекты
+                span.breadcrumbs-separator —
+                span.breadcrumbs-item(href="/") Название проекта
+
+    section.p__inner-section
+
+        .container
+
+            h2.section-title.page-title.p__inner-title Название проекта
+
+        .p__wrapper
+
+            .p__inner-image
+                .swiper.project__slider
+
+                    .swiper-wrapper
+
+                        .swiper-slide
+                            .project-image__wrap(style="background-image: url('assets/images/project_1.jpg')")
+
+                        .swiper-slide
+                            .project-image__wrap(style="background-image: url('assets/images/project_1.jpg')")
+
+                        .swiper-slide
+                            .project-image__wrap(style="background-image: url('assets/images/project_1.jpg')")
+
+                        .swiper-slide
+                            .project-image__wrap(style="background-image: url('assets/images/project_1.jpg')")
+
+                        .swiper-slide
+                            .project-image__wrap(style="background-image: url('assets/images/project_1.jpg')")
+
+                    .slide-navigation
+
+                        .swiper-project-nav
+                            button.button-navigation.button-prev
+                                i.fal.fa-arrow-left
+                                span Пред. фото
+
+                            .slider-pagination
+                                .swiper-fraction
+                                    span.current-slide-number
+                                    span(style="margin: 0 5px;") /
+                                    span.last-slide-number
+                                .swiper-pagination
+
+                            button.button-navigation.button-next
+                                i.fal.fa-arrow-right
+                                span След. фото
+
+        .p__info
+            h3.p__info-title О проекте
+            a.p__address(href="#") Москва, ул. Ивана  Иванова, д 23
+
+            .p__info-text
+
+                .p__col-left
+                    span.p__features
+                        p.p__features-bold 20 000
+                        p.features-small квадратных метров
+
+                    span.p__features
+                        p.p__features-bold 4 000
+                        p.features-small парковочных мест
+
+                    span.p__features
+                        p.p__features-bold 2 196
+                        p.features-small квартир
+
+                    span.p__features
+                        p.p__features-bold 9-16
+                        p.features-small этажность
+
+                .p__col-right
+
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+
+        .p__images
+
+            .p__image-item(style="background-image: url('assets/images/img-1.jpg')")
+            .p__image-item(style="background-image: url('assets/images/img-2.jpg')")
+            .p__image-item(style="background-image: url('assets/images/img-3.jpg')")
+            .p__image-item(style="background-image: url('assets/images/img-4.jpg')")
+
+        .p__bottom
+
+            .container
+
+                a.p__return-link(href="#") Вернуться к проектам

@@ -1,11 +1,25 @@
+.specialty-section {
+    padding: 70px 0;
+    background: #eeeeee;
+}
+
+.specialty__title {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
 .specialty__inner {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
     width: 100%;
     max-width: 1060px;
+
+    @include breakpoint(md) {
+        justify-content: space-between;
+    }
 }
 
 .specialty__block {
@@ -15,22 +29,38 @@
     display: flex;
     align-items: flex-end;
     width: 100%;
-    height: 302px;
-    max-width: 520px;
+    height: 230px;
+    max-width: 375px;
     transition: all 0.4s ease;
+
+    @include breakpoint(md) {
+        flex: 0 0 31%;
+        max-width: 520px;
+    }
+
+    @include breakpoint(lg) {
+        height: 302px;
+    }
+
+    @include breakpoint(xl) {
+        flex: 0 0 32%;
+    }
 }
 
 .specialty__block:hover {
     background-size: 110% 110%;
 }
 
-.specialty__block {
-    flex: 0 0 32%;
-}
-
 .specialty__block:nth-child(1),
 .specialty__block:nth-child(2) {
-    flex: 0 0 50%;
+
+    @include breakpoint(md) {
+        flex: 0 0 48%;
+    }
+
+    @include breakpoint(xl) {
+        flex: 0 0 50%;
+    }
 }
 
 .specialty-title {
@@ -38,4 +68,10 @@
     font-size: 18px;
     line-height: 21px;
     color: #fff;
+}
+
+.specialty__text {
+    margin: 60px auto 0;
+    max-width: 745px;
+    text-align: center;
 }

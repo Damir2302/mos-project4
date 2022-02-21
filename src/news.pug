@@ -1,0 +1,63 @@
+---
+title: МОСПРОЕКТ 4 | Новости
+news_page: true
+---
+
+extends includes/_page
+
+block main
+
+    .breadcrumbs
+
+        .container
+
+            .breadcrumbs__inner
+
+                a.breadcrumbs-item(href="/") Главная
+                span.breadcrumbs-separator —
+                span.breadcrumbs-item(href="/") Новости
+
+    section.news-section
+
+        .container
+
+            h2.section-title.page-title Новости
+
+        .news__page
+
+            .news__page-nav-wrapper
+
+                .container
+
+                    .news__page-nav
+
+                        .news__page-tab 2022
+                        .news__page-tab 2021
+                        .news__page-tab 2020
+
+            .news__page-wrapper
+
+                .container
+                    .news__page-item
+                        .news__apge-item-img
+                            img(src='http://photos.wikimapia.org/p/00/05/04/71/27_big.jpg' alt='')
+                            span.news__page-item-date 12. ноя
+                        .news__page-item-content
+                        .news__page-item-title Название новости текст в одну или две строки
+                        .news__apge-item-link Подробнее
+
+                    .news__page-item
+                        .news__apge-item-img
+                            img(src='http://photos.wikimapia.org/p/00/05/04/71/27_big.jpg' alt='')
+                            span.news__page-item-date 12. ноя
+                        .news__page-item-content
+                        .news__page-item-title Название новости текст в одну или две строки
+                        .news__apge-item-link Подробнее
+
+                    .news__page-item
+                        .news__apge-item-img
+                            img(src='http://photos.wikimapia.org/p/00/05/04/71/27_big.jpg' alt='')
+                            span.news__page-item-date 12. ноя
+                        .news__page-item-content
+                        .news__page-item-title Название новости текст в одну или две строки
+                        .news__apge-item-link Подробнее

@@ -1,0 +1,122 @@
+.news__page {
+    display: flex;
+    flex-direction: column;
+}
+
+.news__page-nav-wrapper {
+    border-top: 1px solid rgb(241, 241, 241);
+}
+
+.news__page-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.news__page-nav .container {
+    display: flex;
+}
+
+.news__page-tab {
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+    text-transform: uppercase;
+    line-height: 1.167;
+    width: 133px;
+    height: 1005px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+}
+
+.news__page-wrapper {
+    height: calc(100vh - 289px);
+    background: #f1f1f1;
+
+    @include breakpointMax(lg) {
+       height: auto;
+    }
+}
+
+.news__page-wrapper .container {
+    max-width: 1060px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      ". . .";
+
+      @include breakpointMax(lg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px 20px;
+        grid-template-areas:
+          ". . ";
+    }
+
+    @include breakpointMax(md) {
+        display: grid;
+        grid-template-columns: 1fr;
+        // grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px 20px;
+        grid-template-areas:
+          ".";
+    }
+}
+
+.news__page-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.news__apge-item-img {
+    height: 340px;
+    position: relative;
+}
+
+.news__apge-item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.news__page-item-date {
+    position: absolute;
+    width: 65px;
+    height: 25px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+
+}
+
+.news__page-item-title {
+    margin-top: 25px;
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.688;
+}
+.news__apge-item-link {
+    margin-top: 25px;
+    font-size: 12px;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+}

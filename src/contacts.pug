@@ -1,0 +1,74 @@
+---
+title: МОСПРОЕКТ 4
+contacts_page: true
+---
+
+extends includes/_page
+
+block main
+
+    .breadcrumbs
+
+        .container
+
+            .breadcrumbs__inner
+
+                a.breadcrumbs-item(href="/") Главная
+                span.breadcrumbs-separator —
+                span.breadcrumbs-item(href="/") Контакты
+
+    section.contacts-section
+
+        .container
+
+            h2.section-title.page-title Контакты
+
+        .contacts__location
+            .container
+                .contacts__links
+
+                    .contacts__link
+                        .contacts__link-title Адрес
+                        a(href='') Россия, 123056, Москва,
+                        a(href='') ул. 2-я Брестска, 29-А
+
+                    .contacts__link
+                        .contacts__link-title Канцелярия
+                        a(href='tel: +7 (499) 251 90 58') Тел.: +7 (499) 251 90 58
+                        a(href='mailto:info-mosproekt4@yandex.ru') E-mail: info-mosproekt4@yandex.ru
+
+                #contacts__map.contacts__map-wrapper(style='width: 100%; height: 491px;display: block;')
+
+        .contacts__form
+
+            .container
+
+                .contacts__form-title Форма обратной связи
+
+                form(action='')
+
+                    .form__left
+                        label.form__label(for='')
+                            | Ваше имя
+                            input.form__input(type='text' name='' id='' placeholder='Как к вам обращаться?')
+
+                        label.form__label(for='')
+                            | Телефон
+                            input.form__input(id='' placeholder='+7')
+
+                        label.form__label(for='')
+                            | E-mail
+                            input.form__input(type='text' name='' id='' placeholder='Введите адрес почты')
+                        ul.form__list
+                            li
+                                span
+                                    | Нажимая кнопку отправить вы a соглашаетесь с
+                                    a(href='') условиями обработки персональных данных
+                                    |  и
+                                    a(href='') политикой конфиденциальности
+
+                    .form__right
+                        textarea.form_textarea(name='' id='')
+                        input.form__submit(type='submit' value='Отправить сообщение')
+
+
