@@ -242,12 +242,13 @@
 
 .archive__slider {
     padding: 90px 0;
-    width: 50%;
     overflow: hidden;
 }
 
 .image__block {
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .swiper-item-pagination {
@@ -280,11 +281,7 @@
     object-fit: cover;
 }
 
-.image__block a {
-    text-align: center;
-}
-
-.image__block a img {
+.archive__image img {
     width: auto;
     object-fit: cover;
 }
