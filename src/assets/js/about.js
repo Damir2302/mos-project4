@@ -59,6 +59,7 @@ let item_cart;
 if ($('.swiper-item--first').length) {
     item_cart = new Swiper('.swiper-item--first', {
       slidesPerView: "auto",
+      spaceBetween: 10,
       centeredSlides: true,
       slidesPerView: 1,
       thumbs: {
@@ -88,6 +89,7 @@ let item_cart_second;
 if ($('.swiper-item--second').length) {
     item_cart = new Swiper('.swiper-item--second', {
       slidesPerView: "auto",
+      spaceBetween: 10,
       centeredSlides: true,
       slidesPerView: 1,
       thumbs: {
