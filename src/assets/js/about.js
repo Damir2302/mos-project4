@@ -2,8 +2,26 @@ if ($('.awards__slider').length) {
     let awards__slider = new Swiper('.awards__slider', {
       direction: 'horizontal',
       freeMode: true,
-      slidesPerView: 2.4,
-      spaceBetween: 100,
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+      breakpoints: {
+        1600: {
+          slidesPerView: 2.4,
+          spaceBetween: 100
+        },
+        1260: {
+           slidesPerView: 2,
+		       spaceBetween: 30
+        },
+        1024: {
+          slidesPerView: 1.5,
+          spaceBetween: 30
+        },
+        576: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        }
+      },
 
       pagination: {
         el: '.swiper-pagination',
@@ -43,11 +61,15 @@ let item_cart_pagination;
 if ($('.swiper-item-pagination--first').length) {
     item_cart_pagination = new Swiper('.swiper-item-pagination--first', {
       spaceBetween: 10,
-      slidesPerView: 7,
+      slidesPerView: 4,
       freeMode: true,
       watchSlidesProgress: true,
       breakpoints: {
+        1260: {
+          slidesPerView: 7
+        },
         470: {
+          slidesPerView: 5,
           spaceBetween: 15
         }
       }
@@ -73,11 +95,15 @@ let item_cart_pagination_second;
 if ($('.swiper-item-pagination--second').length) {
     item_cart_pagination = new Swiper('.swiper-item-pagination--second', {
       spaceBetween: 10,
-      slidesPerView: 7,
+      slidesPerView: 4,
       freeMode: true,
       watchSlidesProgress: true,
       breakpoints: {
+        1260: {
+          slidesPerView: 7
+        },
         470: {
+          slidesPerView: 5,
           spaceBetween: 15
         }
       }

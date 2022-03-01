@@ -1,14 +1,24 @@
 .project__nav {
+    margin: 0 0 30px;
     display: flex;
-    height: 56px;
+    flex-direction: column;
     border-top: 1px solid #f9f9f9;
+
+    @include breakpoint(lg) {
+        margin: 0;
+        flex-direction: row;
+        height: 56px;
+    }
 }
 
 .project__nav-item {
-    padding: 0 30px;
     display: flex;
     align-items: center;
     line-height: 56px;
+
+    @include breakpoint(lg) {
+        padding: 0 30px;
+    }
 }
 
 .project__nav-item.active {
@@ -17,9 +27,17 @@
 
 .project__nav-link {
     font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 30px;
+
+    @include breakpoint(lg) {
+        line-height: 21px;
+        text-transform: uppercase;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 18px;
+    }
 }
 
 .project__nav-item.active .project__nav-link {
@@ -140,9 +158,17 @@
 
 .project__slider .slide-navigation {
     position: absolute;
-    bottom: 40px;
+    bottom: 90px;
     width: 100%;
     z-index: 1;
+
+    @include breakpoint(xs) {
+        bottom: 150px;
+    }
+
+    @include breakpoint(md) {
+        bottom: 40px;
+    }
 }
 
 .swiper-project-nav {
@@ -175,12 +201,13 @@
 }
 
 .swiper-project-nav .slider-pagination {
-    width: 100%;
+    display: none;
 
-    @include breakpoint(lg) {
+    @include breakpoint(md) {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
         z-index: 1;
     }
 }
@@ -236,6 +263,8 @@
     margin: 0 auto;
     padding: 20px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     max-width: 500px;
     border: 1px solid #dddddd;
@@ -243,29 +272,15 @@
 
     @include breakpoint(lg) {
         margin: 0;
-        padding: 25px 73px;
-        width: unset;
-        max-width: unset;
+        padding: 26px 20px;
+        width: 100%;
+        max-width: 330px;
     }
 }
 
 .pagination-arrow {
-    position: absolute;
     font-size: 18px;
     line-height: 21px;
-}
-
-.pagination-arrow.arrow-left {
-    left: 20px;
-}
-
-.pagination-arrow.arrow-right {
-    top: 21px;
-    right: 20px;
-
-    @include breakpoint(lg) {
-        top: 25px;
-    }
 }
 
 .pagination-items {
@@ -288,9 +303,9 @@
     content: '';
     background: #000;
     position: absolute;
-    left: 0;
+    left: 5px;
     bottom: -21px;
-    width: 100%;
+    width: calc(100% - 10px);
     height: 2px;
 
     @include breakpoint(lg) {
@@ -303,7 +318,7 @@
     padding: 30px;
     position: relative;
     width: 100%;
-    max-width: 300px;
+    max-width: 330px;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
@@ -313,7 +328,6 @@
 
     @include breakpoint(lg) {
         margin: 0;
-        padding: 30px 75px;
     }
 }
 

@@ -12,7 +12,7 @@ block footer
 						img(src="assets/images/Logo_white.svg", alt="logo")
 					.footer__callback
 						i.fal.fa-feather
-						a(href="#") Обратная связь
+						a#callbackBtn.callback-btn(href="#") Обратная связь
 
 				.footer-block
 					ul.footer__nav
@@ -51,3 +51,41 @@ block footer
 						li
 							a(href="#")
 								i.fab.fa-instagram
+
+	.popup-layer
+		.popup-container
+			.popup
+				.popup-wrapper
+					a.popup-close
+						i.fal.fa-times
+					.popup-header
+						p Форма обратной связи
+					.popup-form
+						form#form-popup
+							.form-col-row
+								label(for="name") Ваше имя
+								input#name(type="text" name="name" placeholder="Как к вам обращаться?" required)
+							.form-col-row
+								label(for="phone") Телефон
+								input#phone(type="text" name="phone" placeholder="+7" required)
+							.form-col-row
+								label(for="phone") E-mail
+								input#email(type="email" name="email" placeholder="Введите адрес электронной почты" required)
+							.form-col-row
+								textarea#textarea(type="text" name="textarea" placeholder="Кратко опишите суть вашего обращения" required)
+
+							.popup-agreement
+								input#agreement(type="checkbox", name="agreement" style="display: none" checked required)
+								label(for="agreement")
+								span Нажимая кнопку отправить вы соглашаетесь с <a href="#">условиями обработки персональных данных</a> и <a href="#">политикой конфиденциальности</a>
+
+						button#submit(type="submit") Отправить сообщение
+
+			.popup.popup-success.hide
+				.popup-wrapper
+					a.popup-close
+						i.fal.fa-times
+					i.fal.fa-check-circle
+					p Спасибо!
+					span Ваше сообщение отправлено
+					a.button-style Вернуться на сайт

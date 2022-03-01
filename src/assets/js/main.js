@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 
   // NEWS SECTION
-  if ($('.news__block')) {
+  if ($('.news__block').length) {
     let news_block = new Swiper('.news__block', {
       direction: 'horizontal',
       freeMode: true,
