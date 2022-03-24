@@ -59,6 +59,19 @@
     }
 }
 
+.slider-gradient::before {
+
+    @include breakpoint(lg) {
+        content: '';
+        background: linear-gradient(to top, rgba(125,185,232,0) 0%,rgba(47,60,73,0) 80%,rgba(47,60,73,1) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .slider-desc {
     max-width: 438px;
 
